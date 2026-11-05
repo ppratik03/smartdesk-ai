@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/smartdesk/__init__.py
+src/smartdesk_ai.egg-info/PKG-INFO
+src/smartdesk_ai.egg-info/SOURCES.txt
+src/smartdesk_ai.egg-info/dependency_links.txt
+src/smartdesk_ai.egg-info/requires.txt
+src/smartdesk_ai.egg-info/top_level.txt
