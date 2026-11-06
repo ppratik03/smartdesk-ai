@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SmartDesk local credentials and Chroma index
+.env.*
+!.env.example
+!.env.*.example
+/.data/
+
+# Windows file metadata
+Thumbs.db
+Desktop.ini

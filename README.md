@@ -59,10 +59,13 @@ If the project is already on your computer, open a terminal in its root folder i
 
 Create the environment only if it does not already exist. If you have another supported Python version installed, replace `-3.13` with that version, for example `-3.11`.
 
-```powershell
-if (-not (Test-Path .venv\Scripts\python.exe)) {
-	py -3.13 -m venv .venv
-}
+```
+python -m venv .venv
+
+.venv\Scripts\activate
+```
+```
+pip install -r requirements.txt
 .\.venv\Scripts\python.exe -m pip install -e ".[dev]"
 ```
 
@@ -72,10 +75,8 @@ The `dev` extra includes pytest and Ruff. These commands use the environment's P
 
 Create the local configuration only if it is missing; never overwrite existing credentials:
 
-```powershell
-if (-not (Test-Path .env)) {
-	Copy-Item .env.example .env
-}
+```
+copy .env.example .env
 ```
 
 Open the local `.env` file in your editor and set the following values:
